@@ -15,18 +15,12 @@ const Footer = () => {
       { name: 'Contact', href: '#contact' },
       { name: 'Resume', href: '/resume.pdf' }
     ],
-    'More': [
-      { name: 'Skills', href: '#skills' },
-      { name: 'Projects', href: '#projects' },
-      { name: 'Contact', href: '#contact' },
-      { name: 'Resume', href: '/resume.pdf' }
-    ]
   };
 
   const contactInfo = {
-    email: 'your.email@example.com',
-    phone: '+91 98765 43210',
-    location: 'Your City, State, India'
+    email: 'meghshah0410@gmail.com',
+    phone: '+91 63527 64092',
+    location: 'Anand, Gujarat, India'
   };
 
   return (
@@ -41,17 +35,17 @@ const Footer = () => {
             transition={{ duration: 0.5 }}
             className="space-y-4"
           >
-            <h3 className="text-2xl font-bold">Portfolio</h3>
+            <h3 className="text-2xl font-bold">Megh Shah</h3>
             <p className="text-gray-400 leading-relaxed">
-              Passionate software developer crafting digital experiences
+              Software developer crafting digital experiences
               with modern technologies. Let's build something amazing
               together.
             </p>
             <div className="flex space-x-4">
               {[
-                { icon: Github, href: '#', label: 'GitHub' },
-                { icon: Linkedin, href: '#', label: 'LinkedIn' },
-                { icon: Mail, href: '#', label: 'Email' }
+                { icon: Github, href: 'https://github.com/megh2108', label: 'GitHub' },
+                { icon: Linkedin, href: 'https://www.linkedin.com/in/megh-shah-a19813205', label: 'LinkedIn' },
+                { icon: Mail, href: 'mailto:meghshah0410@gmail.com', label: 'Email' },
               ].map((social, index) => {
                 const Icon = social.icon;
                 return (
@@ -120,11 +114,12 @@ const Footer = () => {
           className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center"
         >
           <p className="text-gray-400 text-sm">
-            © 2025 Your Name. Made with{' '}
-            <Heart size={16} className="inline text-red-500 mx-1" /> using React.js
+            © {new Date().getFullYear()} Megh Shah.
+            {/* Made with{' '}
+            <Heart size={16} className="inline text-red-500 mx-1" /> using React.js */}
           </p>
           <p className="text-gray-400 text-sm mt-2 md:mt-0">
-            Designed & Developed by Your Name
+            Designed & Developed by Megh Shah
           </p>
         </motion.div>
       </div>

@@ -2,22 +2,73 @@ import { motion } from 'framer-motion';
 import { Briefcase, MapPin, Calendar, CheckCircle } from 'lucide-react';
 
 const Experience = () => {
+  // const experiences = [
+  //   {
+  //     title: 'Software Developer',
+  //     company: 'Company Name 3',
+  //     location: 'City, State',
+  //     period: 'Jan 2024 - Present',
+  //     status: 'Full-time',
+  //     description: 'Currently working on developing scalable web applications using modern technologies. Collaborating with cross-functional teams to deliver high-quality software solutions.',
+  //     responsibilities: [
+  //       'Developing and maintaining web applications using React.js and Node.js',
+  //       'Implementing responsive UI/UX designs with modern CSS frameworks',
+  //       'Collaborating with backend teams for API integration and optimization',
+  //       'Participating in code reviews and maintaining coding standards',
+  //       'Contributing to architectural decisions and technical documentation'
+  //     ],
+  //     technologies: ['React.js', 'Node.js', 'JavaScript', 'CSS3', 'Git', 'Agile']
+  //   }
+  // ];
   const experiences = [
     {
-      title: 'Software Developer',
-      company: 'Company Name 3',
-      location: 'City, State',
-      period: 'Jan 2024 - Present',
+      title: 'Associate Software Engineer',
+      company: 'Alois Solution Pvt. Ltd.',
+      location: 'Vadodara, Gujarat',
+      period: 'Nov 2024 - Present',
       status: 'Full-time',
-      description: 'Currently working on developing scalable web applications using modern technologies. Collaborating with cross-functional teams to deliver high-quality software solutions.',
+      description:
+        'Working as a Full-Stack Developer using JavaScript & .NET technologies, focusing on developing high-performance web applications.',
       responsibilities: [
-        'Developing and maintaining web applications using React.js and Node.js',
-        'Implementing responsive UI/UX designs with modern CSS frameworks',
-        'Collaborating with backend teams for API integration and optimization',
-        'Participating in code reviews and maintaining coding standards',
-        'Contributing to architectural decisions and technical documentation'
+        'Developing full-stack web applications using JavaScript and .NET technologies',
+        'Enhanced system performance to exceed 90% and optimized SEO',
+        'Improved user experience and accessibility across web platforms',
+        'Utilized GitHub for version control and collaboration',
+        'Followed Scrum methodology for effective project management'
       ],
-      technologies: ['React.js', 'Node.js', 'JavaScript', 'CSS3', 'Git', 'Agile']
+      technologies: ['JavaScript', '.NET', 'GitHub', 'Scrum', 'HTML5', 'CSS3']
+  },
+    {
+      title: 'Junior Software Engineer',
+      company: 'Civica Resource Pvt. Ltd.',
+      location: 'Vadodara, Gujarat',
+      period: 'Feb 2024 - Nov 2024',
+      status: 'Full-time',
+      description:
+        'Worked as a Full-Stack Developer on enterprise projects using .NET Core and React.js.',
+      responsibilities: [
+        'Developed applications using .NET Core 6 (MVC & API), EF Core, and React.js',
+        'Used Azure DevOps for version control, CI/CD, and team collaboration',
+        'Wrote unit tests to ensure code reliability and maintainability',
+        'Collaborated with team members to meet project deadlines and ensure quality delivery'
+      ],
+      technologies: ['.NET Core 6', 'EF Core', 'React.js', 'Azure DevOps', 'CI/CD', 'Unit Testing']
+    },
+    {
+      title: 'IDP Project - Intern',
+      company: 'Venom Technologies',
+      location: 'Anand, Gujarat',
+      period: 'July 2023 - Dec 2023',
+      status: 'Internship',
+      description:
+        'Developed a full-stack industrial project using the MERN stack, including frontend, backend, and deployment.',
+      responsibilities: [
+        'Built a full-stack web application using React.js, Node.js, MongoDB, and Express.js',
+        'Integrated RESTful APIs for data handling and communication between client and server',
+        'Deployed the application on the cloud for real-world accessibility',
+        'Gained hands-on experience in both frontend and backend development'
+      ],
+      technologies: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'REST API', 'Cloud Deployment']
     }
   ];
 
@@ -49,10 +100,10 @@ const Experience = () => {
               {index < experiences.length - 1 && (
                 <div className="absolute left-8 top-16 h-32 w-0.5 bg-primary-200"></div>
               )}
-              
+
               {/* Timeline Node */}
               <div className="absolute left-6 top-12 w-4 h-4 bg-primary-600 rounded-full border-4 border-white shadow-lg"></div>
-              
+
               {/* Content Card */}
               <div className="ml-20 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100 overflow-hidden">
                 <div className="p-8">
@@ -80,11 +131,11 @@ const Experience = () => {
                       {exp.status}
                     </span>
                   </div>
-                  
+
                   <p className="text-gray-600 leading-relaxed mb-6">
                     {exp.description}
                   </p>
-                  
+
                   <div className="mb-6">
                     <h4 className="font-semibold text-gray-900 mb-3">Key Responsibilities:</h4>
                     <div className="grid gap-2">
@@ -103,7 +154,7 @@ const Experience = () => {
                       ))}
                     </div>
                   </div>
-                  
+
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-3">Technologies Used:</h4>
                     <div className="flex flex-wrap gap-2">

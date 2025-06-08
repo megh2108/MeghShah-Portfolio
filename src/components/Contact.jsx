@@ -23,7 +23,7 @@ const Contact = () => {
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
-    
+
     // Clear error when user starts typing
     if (errors[name]) {
       setErrors(prev => ({ ...prev, [name]: '' }));
@@ -37,14 +37,14 @@ const Contact = () => {
     try {
       contactSchema.parse(formData);
       setErrors({});
-      
+
       // Simulate form submission
       await new Promise(resolve => setTimeout(resolve, 1000));
-      
+
       // Reset form
       setFormData({ name: '', email: '', subject: '', message: '' });
       alert('Message sent successfully!');
-      
+
     } catch (error) {
       if (error instanceof z.ZodError) {
         const fieldErrors = {};
@@ -62,27 +62,26 @@ const Contact = () => {
     {
       icon: Mail,
       label: 'Email',
-      value: 'your.email@example.com',
-      href: 'mailto:your.email@example.com'
+      value: 'meghshah0410@gmail.com',
+      href: 'mailto:meghshah0410@gmail.com'
     },
     {
       icon: Phone,
       label: 'Phone',
-      value: '+91 98765 43210',
-      href: 'tel:+919876543210'
+      value: '+91 63527 64092',
+      href: 'tel:+916352764092'
     },
     {
       icon: MapPin,
       label: 'Location',
-      value: 'Your City, State, India',
+      value: 'Anand, Gujarat, India',
       href: '#'
     }
   ];
 
   const socialLinks = [
-    { icon: Github, href: '#', label: 'GitHub' },
-    { icon: Linkedin, href: '#', label: 'LinkedIn' },
-    { icon: Twitter, href: '#', label: 'Twitter' }
+    { icon: Github, href: 'https://github.com/megh2108', label: 'GitHub' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/in/megh-shah-a19813205', label: 'LinkedIn' },
   ];
 
   return (
@@ -197,9 +196,8 @@ const Contact = () => {
                     value={formData.name}
                     onChange={handleInputChange}
                     placeholder="Your full name"
-                    className={`w-full pl-10 pr-4 py-3 border rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors ${
-                      errors.name ? 'border-red-500' : 'border-gray-300'
-                    }`}
+                    className={`w-full pl-10 pr-4 py-3 border rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors ${errors.name ? 'border-red-500' : 'border-gray-300'
+                      }`}
                   />
                 </div>
                 {errors.name && <p className="text-red-500 text-sm mt-1">{errors.name}</p>}
@@ -218,9 +216,8 @@ const Contact = () => {
                     value={formData.email}
                     onChange={handleInputChange}
                     placeholder="your.email@example.com"
-                    className={`w-full pl-10 pr-4 py-3 border rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors ${
-                      errors.email ? 'border-red-500' : 'border-gray-300'
-                    }`}
+                    className={`w-full pl-10 pr-4 py-3 border rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors ${errors.email ? 'border-red-500' : 'border-gray-300'
+                      }`}
                   />
                 </div>
                 {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email}</p>}
@@ -237,9 +234,8 @@ const Contact = () => {
                   value={formData.subject}
                   onChange={handleInputChange}
                   placeholder="What's this about?"
-                  className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors ${
-                    errors.subject ? 'border-red-500' : 'border-gray-300'
-                  }`}
+                  className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors ${errors.subject ? 'border-red-500' : 'border-gray-300'
+                    }`}
                 />
                 {errors.subject && <p className="text-red-500 text-sm mt-1">{errors.subject}</p>}
               </div>
@@ -257,9 +253,8 @@ const Contact = () => {
                     value={formData.message}
                     onChange={handleInputChange}
                     placeholder="Tell me about your project or just say hi!"
-                    className={`w-full pl-10 pr-4 py-3 border rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors resize-none ${
-                      errors.message ? 'border-red-500' : 'border-gray-300'
-                    }`}
+                    className={`w-full pl-10 pr-4 py-3 border rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors resize-none ${errors.message ? 'border-red-500' : 'border-gray-300'
+                      }`}
                   />
                 </div>
                 {errors.message && <p className="text-red-500 text-sm mt-1">{errors.message}</p>}
@@ -270,9 +265,8 @@ const Contact = () => {
                 disabled={isSubmitting}
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                className={`w-full bg-gradient-to-r from-primary-600 to-secondary-600 text-white py-3 px-6 rounded-lg font-medium flex items-center justify-center space-x-2 transition-all duration-300 ${
-                  isSubmitting ? 'opacity-70 cursor-not-allowed' : 'hover:shadow-lg'
-                }`}
+                className={`w-full bg-gradient-to-r from-primary-600 to-secondary-600 text-white py-3 px-6 rounded-lg font-medium flex items-center justify-center space-x-2 transition-all duration-300 ${isSubmitting ? 'opacity-70 cursor-not-allowed' : 'hover:shadow-lg'
+                  }`}
               >
                 <Send size={18} />
                 <span>{isSubmitting ? 'Sending...' : 'Send Message'}</span>

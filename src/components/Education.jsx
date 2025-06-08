@@ -5,8 +5,8 @@ const Education = () => {
   const education = [
     {
       degree: 'Bachelor of Technology - Computer Engineering',
-      school: 'Your University Name',
-      location: 'City, State',
+      school: 'Birla VIshvakarma Mahavidyalaya',
+      location: 'Anand, Gujarat',
       period: '2020 - 2024',
       status: 'Currently Pursuing',
       description: 'Focused on computer science fundamentals, software engineering principles, and modern programming technologies. Maintained strong academic performance while gaining industry experience.',
@@ -16,7 +16,35 @@ const Education = () => {
         'Active participation in coding competitions and technical events',
         'Balanced academics with professional work experience'
       ],
-      cgpa: '4.5/10.0'
+      cpi: '8.42/10.0'
+    },
+    {
+      degree: 'Higher Secondary Education (Science Stream)',
+      school: 'D. N. High School',
+      location: 'Anand, Gujarat',
+      period: '2018 - 2020',
+      status: 'Completed',
+      description: 'Studied Physics, Chemistry, and Mathematics with a focus on preparing for engineering entrance exams.',
+      highlights: [
+        'Strong foundation in core science subjects',
+        'Participated in academic and co-curricular activities',
+        'Consistently scored well in internal and board exams'
+      ],
+      percentage: '89.66%'
+    },
+    {
+      degree: 'Secondary School Education (10th Grade)',
+      school: 'D. N. High School',
+      location: 'Anand, Gujarat',
+      period: '2017 - 2018',
+      status: 'Completed',
+      description: 'Completed foundational education with an emphasis on mathematics, science, and language skills.',
+      highlights: [
+        'Excelled in mathematics and science subjects',
+        'Actively involved in school-level competitions and activities',
+        'Achieved distinction in final board examinations'
+      ],
+      percentage: '92.66%'
     }
   ];
 
@@ -46,10 +74,10 @@ const Education = () => {
             >
               {/* Timeline Line */}
               <div className="absolute left-8 top-16 bottom-0 w-0.5 bg-primary-200"></div>
-              
+
               {/* Timeline Node */}
               <div className="absolute left-6 top-12 w-4 h-4 bg-primary-600 rounded-full border-4 border-white shadow-lg"></div>
-              
+
               {/* Content Card */}
               <div className="ml-20 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden">
                 <div className="p-8">
@@ -74,19 +102,19 @@ const Education = () => {
                       </div>
                     </div>
                     <div className="flex flex-col items-end">
-                      <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium mb-2">
+                      {/* <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium mb-2">
                         {edu.status}
-                      </span>
+                      </span> */}
                       <span className="bg-primary-100 text-primary-800 px-3 py-1 rounded-full text-sm font-bold">
-                        CGPA: {edu.cgpa}
+                        {edu.cpi && `CPI: ${edu.cpi}` || edu.percentage && `Percentage: ${edu.percentage}` }
                       </span>
                     </div>
                   </div>
-                  
+
                   <p className="text-gray-600 leading-relaxed mb-6">
                     {edu.description}
                   </p>
-                  
+
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-3">Key Highlights:</h4>
                     <div className="grid gap-2">

@@ -32,7 +32,7 @@ const Header = ({ activeSection, setActiveSection }) => {
             whileHover={{ scale: 1.05 }}
             className="text-2xl font-bold text-primary-600"
           >
-            Portfolio
+            Megh Shah
           </motion.div>
           
           <nav className="flex space-x-8">
