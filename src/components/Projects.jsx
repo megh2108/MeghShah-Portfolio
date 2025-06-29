@@ -15,8 +15,8 @@ const Projects = () => {
 
   const filters = ['All', 'Full-Stack', 'Frontend', 'Backend'];
 
-  const filteredProjects = activeFilter === 'All' 
-    ? projects 
+  const filteredProjects = activeFilter === 'All'
+    ? projects
     : projects.filter(project => project.category === activeFilter);
 
   return (
@@ -48,11 +48,10 @@ const Projects = () => {
                 onClick={() => setActiveFilter(filter)}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className={`px-6 py-2 rounded-md font-medium transition-all duration-300 ${
-                  activeFilter === filter
+                className={`px-6 py-2 rounded-md font-medium transition-all duration-300 ${activeFilter === filter
                     ? 'bg-primary-600 text-white shadow-lg'
                     : 'text-gray-600 hover:text-primary-600'
-                }`}
+                  }`}
               >
                 {filter}
               </motion.button>
@@ -133,7 +132,7 @@ const Projects = () => {
                     <Github size={16} />
                     <span>Code</span>
                   </motion.a>
-                  <motion.a
+                  {project.demo && <motion.a
                     href={project.demo}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -143,7 +142,8 @@ const Projects = () => {
                   >
                     <ExternalLink size={16} />
                     <span>Live Demo</span>
-                  </motion.a>
+                  </motion.a>}
+
                 </div>
               </div>
             </motion.div>
