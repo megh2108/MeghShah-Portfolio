@@ -1,17 +1,11 @@
 import { motion } from 'framer-motion';
 import { ExternalLink, Github, Calendar, Tag } from 'lucide-react';
 import { useState, useEffect } from 'react';
+import projectsData from '../data/projects.js';
 
 const Projects = () => {
-  const [projects, setProjects] = useState([]);
+  const [projects, setProjects] = useState(projectsData); 
   const [activeFilter, setActiveFilter] = useState('All');
-
-  useEffect(() => {
-    // Load projects from JSON file
-    import('../data/projects.json')
-      .then(data => setProjects(data.default))
-      .catch(error => console.error('Error loading projects:', error));
-  }, []);
 
   const filters = ['All', 'Full-Stack', 'Frontend', 'Backend'];
 
