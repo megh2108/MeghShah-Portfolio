@@ -79,7 +79,7 @@ const Education = () => {
               <div className="absolute left-6 top-12 w-4 h-4 bg-primary-600 rounded-full border-4 border-white shadow-lg"></div>
 
               {/* Content Card */}
-              <div className="ml-20 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+              <div className="ml-20 mt-7 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden">
                 <div className="p-8">
                   <div className="flex flex-wrap items-start justify-between mb-4">
                     <div className="flex-1">

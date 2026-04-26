@@ -78,17 +78,17 @@ const Projects = () => {
                   alt={project.title}
                   className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
                 />
-                <div className="absolute top-4 left-4">
+                <div className="absolute top-4 right-4">
                   <span className="bg-primary-600 text-white px-3 py-1 rounded-full text-sm font-medium">
                     {project.category}
                   </span>
                 </div>
-                <div className="absolute top-4 right-4">
+                {/* <div className="absolute top-4 right-4">
                   <span className="bg-white/90 text-gray-700 px-3 py-1 rounded-full text-sm font-medium flex items-center">
                     <Calendar size={14} className="mr-1" />
                     {project.year}
                   </span>
-                </div>
+                </div> */}
               </div>
 
               {/* Project Content */}
@@ -96,7 +96,7 @@ const Projects = () => {
                 <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-primary-600 transition-colors">
                   {project.title}
                 </h3>
-                <p className="text-gray-600 text-sm leading-relaxed mb-4 line-clamp-3">
+                <p className="text-gray-600 text-sm leading-relaxed mb-4 line-clamp-5">
                   {project.description}
                 </p>
 

@@ -6,10 +6,12 @@ const Hero = () => {
   // Data configuration
   const heroData = {
     name: 'Megh Shah',
-    title: 'Software Developer',
-    description: 'I am a software engineer with over 2 years of experience in developing useful and creative software. I have worked in different software companies and handled both frontend and backend projects. I enjoy turning ideas into real, working applications using clean and simple code.',
-    resumeUrl: '/MeghShah_Resume.pdf',
-    resumeFileName: 'MeghShah_Resume.pdf',
+    title: 'Software Engineer',
+    description: 'Results-driven Freelance Full-Stack Developer with 2+ years of professional experience building scalable web applications for enterprise clients. With a proven track record of delivering live client projects - including a product catalog website for an industrial manufacturer. I help businesses establish their digital presence with clean code, optimized performance, and on-time delivery.',
+    professionalResumeUrl: '/Megh_Shah_Software_Engineer_Resume.pdf',
+    professionalResumeFileName: 'Megh_Shah_Software_Engineer_Resume.pdf',
+    freelanceResumeUrl: '/Megh_Shah_Freelance_Resume.pdf',
+    freelanceResumeFileName: 'Megh_Shah_Freelance_Resume.pdf',
     email: 'meghshah0410@gmail.com',
     socialLinks: [
       { icon: Github, href: 'https://github.com/megh2108', label: 'GitHub' },
@@ -62,15 +64,24 @@ const Hero = () => {
   };
 
   // Handlers
-  const handleDownloadResume = () => {
+  const handleDownloadProfessionalResume = () => {
     const link = document.createElement('a');
-    link.href = heroData.resumeUrl;
-    link.download = heroData.resumeFileName;
+    link.href = heroData.professionalResumeUrl;
+    link.download = heroData.professionalResumeFileName;
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
   };
 
+ const handleDownloadFreelanceResume = () => {
+    const link = document.createElement('a');
+    link.href = heroData.freelanceResumeUrl;
+    link.download = heroData.freelanceResumeFileName;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+  
   return (
     <section 
       id="home" 
@@ -115,7 +126,7 @@ const Hero = () => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 href={`mailto:${heroData.email}`}
-                className="bg-primary-600 text-white px-6 py-3 rounded-lg font-medium flex items-center space-x-2 hover:bg-primary-700 transition-colors"
+                className="bg-primary-600 text-white px-4 py-2 rounded-lg font-medium flex items-center space-x-2 hover:bg-primary-700 transition-colors"
               >
                 <Mail size={20} />
                 <span>Get In Touch</span>
@@ -124,11 +135,21 @@ const Hero = () => {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                onClick={handleDownloadResume}
-                className="border-2 border-primary-600 text-primary-600 px-6 py-3 rounded-lg font-medium flex items-center space-x-2 hover:bg-primary-600 hover:text-white transition-colors"
+                onClick={handleDownloadProfessionalResume}
+                className="border-2 border-primary-600 text-primary-600 px-4 py-2 rounded-lg font-medium flex items-center space-x-2 hover:bg-primary-600 hover:text-white transition-colors"
               >
                 <Download size={20} />
-                <span>Download Resume</span>
+                <span>Professional Resume</span>
+              </motion.button>
+
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                onClick={handleDownloadFreelanceResume}
+                className="border-2 border-primary-600 text-primary-600 px-4 py-2 rounded-lg font-medium flex items-center space-x-2 hover:bg-primary-600 hover:text-white transition-colors"
+              >
+                <Download size={20} />
+                <span>Freelance Resume</span>
               </motion.button>
             </motion.div>
 

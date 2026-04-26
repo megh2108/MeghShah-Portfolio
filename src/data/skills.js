@@ -1,44 +1,30 @@
 export const skills = {
   frontend: [
-    { name: 'React', icon: '⚛️' },
-    { name: 'TypeScript', icon: '📘' },
-    { name: 'Next.js', icon: '▲' },
-    { name: 'Tailwind CSS', icon: '🎨' },
-    { name: 'Redux', icon: '🔄' },
-    // { name: 'Vue.js', icon: '💚' },
-    // { name: 'Framer Motion', icon: '🎭' },
-    // { name: 'HTML5', icon: '🌐' },
-    // { name: 'CSS3', icon: '🎨' }
+    { name: 'React.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' },
+    { name: 'Angular', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg' },
+    { name: 'Next.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg' },
+    { name: 'Tailwind CSS', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg' },
+    { name: 'HTML5', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg' },
   ],
   backend: [
-    { name: 'Node.js', icon: '🟢' },
-    { name: '.NET Core', icon: '💻' },
-    { name: 'MSSQL', icon: '🗄️' },
-    { name: 'MongoDB', icon: '🍃' },
-    { name: 'Express.js', icon: '⚡' }
-    // { name: 'FastAPI', icon: '🚀' },
-    // { name: 'GraphQL', icon: '📊' },
-    // { name: 'REST APIs', icon: '🔗' }
+    { name: '.NET Core', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg' },
+    { name: 'Node.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg' },
+    { name: 'Express.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg' },
+    { name: 'EF Core', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg' },
+    { name: 'MS SQL', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg' },
+    { name: 'MongoDB', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg' },
   ],
   tools: [
-    { name: 'Git', icon: '📝' },
-    { name: 'GitHub', icon: '🐙' },
-    { name: 'Vite', icon: '⚡' },
-    { name: 'Figma', icon: '🎨' },
-    { name: 'Azure DevOps', icon: '☁️' }
-    // { name: 'AWS', icon: '☁️' },
-    // { name: 'Webpack', icon: '📦' },
-    // { name: 'Jest', icon: '🃏' },
-    // { name: 'Cypress', icon: '🌲' },
-    // { name: 'Prisma', icon: '🔺' }
+    { name: 'GitHub', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg' },
+    { name: 'Azure DevOps', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azuredevops/azuredevops-original.svg' },
+    { name: 'Jira', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg' },
+    { name: 'Figma', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg' },
+    { name: 'Git', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg' },
   ],
   languages: [
-    { name: 'JavaScript', icon: '💛' },
-    { name: 'TypeScript', icon: '💙' },
-    { name: 'Java', icon: '☕' },
-    { name: 'SQL', icon: '🗃️' },
-    // { name: 'Python', icon: '🐍' },
-    // { name: 'Bash', icon: '💻' },
-    // { name: 'Go', icon: '🔷' }
+    { name: 'JavaScript', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg' },
+    { name: 'TypeScript', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg' },
+    { name: 'C#', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg' },
+    { name: 'SQL', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg' },
   ]
 };

@@ -21,38 +21,55 @@ const Experience = () => {
   //   }
   // ];
   const experiences = [
+     {
+      title: 'Software Engineer I',
+      company: 'MRI Software',
+      location: 'Vadodara, Gujarat',
+      period: 'Sept 2025 - Present',
+      status: 'Full-time',
+      // description:
+      //   'Working as a Full-Stack Developer using JavaScript & .NET technologies, focusing on developing high-performance web applications.',
+      responsibilities: [
+        'Designed and implemented core modules for a real estate platform, enhancing overall user experience by ~25%.',
+        'Enhanced backend processes and database queries to improve performance and scalability, reducing average response time by 30%.',
+        'Actively contributed to in Agile Scrum ceremonies and cross-functional teams to align priorities, improving sprint delivery efficiency by 20%.',
+        'Developed and executed unit tests to strengthen system reliability and reduce production defects by 15%.',
+        'Analyzed and resolved critical production issues, improving system stability and reducing recurring defects by 20%.'
+      ],
+      technologies: ['JavaScript', '.NET Core', 'Angular', 'Azure Devops', 'Jira', 'Scrum']
+    },
     {
       title: 'Associate Software Engineer',
       company: 'Alois Solution Pvt. Ltd.',
       location: 'Vadodara, Gujarat',
-      period: 'Nov 2024 - Present',
+      period: 'Nov 2024 - Sept 2025',
       status: 'Full-time',
-      description:
-        'Working as a Full-Stack Developer using JavaScript & .NET technologies, focusing on developing high-performance web applications.',
+      // description:
+      //   'Working as a Full-Stack Developer using JavaScript & .NET technologies, focusing on developing high-performance web applications.',
       responsibilities: [
-        'Developing full-stack web applications using JavaScript and .NET technologies',
-        'Enhanced system performance to exceed 90% and optimized SEO',
-        'Improved user experience and accessibility across web platforms',
-        'Utilized GitHub for version control and collaboration',
-        'Followed Scrum methodology for effective project management'
+        'Developed scalable full-stack applications, improving page load time by 20% and overall app performance by 35%.',
+        'Executed WebSockets-based real-time data synchronization, reducing data latency by 40% and enhancing live user interactions.',
+        'Collaborated with international clients to gather requirements and deliver high-quality features, ensuring 95% on-time delivery.',
+        'Managed CI/CD pipelines using GitHub Actions and Jenkins.',
+        'Applied performance optimization techniques (caching, lazy loading, code splitting) to improve frontend efficiency and responsiveness.'
       ],
-      technologies: ['JavaScript', '.NET', 'GitHub', 'Scrum', 'HTML5', 'CSS3']
-  },
+      technologies: ['JavaScript', '.NET Core', 'React.js', 'Node.js', 'GitHub', 'Scrum']
+    },
     {
       title: 'Junior Software Engineer',
       company: 'Civica Resource Pvt. Ltd.',
       location: 'Vadodara, Gujarat',
       period: 'Feb 2024 - Nov 2024',
       status: 'Full-time',
-      description:
-        'Worked as a Full-Stack Developer on enterprise projects using .NET Core and React.js.',
+      // description:
+      //   'Worked as a Full-Stack Developer on enterprise projects using .NET Core and React.js.',
       responsibilities: [
-        'Developed applications using .NET Core 6 (MVC & API), EF Core, and React.js',
-        'Used Azure DevOps for version control, CI/CD, and team collaboration',
-        'Wrote unit tests to ensure code reliability and maintainability',
-        'Collaborated with team members to meet project deadlines and ensure quality delivery'
+        'Contributed to the development of enterprise-level web applications, supporting internal business operations',
+        'Gained hands-on experience in Scrum practices, actively participating in sprint planning, daily stand-ups, and retrospectives to improve delivery efficiency.',
+        'Collaborated with cross-functional teams, strengthening team coordination and improving feature delivery timelines',
+        'Built strong understanding of professional software development practices, including code reviews, version control, and structured debugging, improving code quality and maintainability.'
       ],
-      technologies: ['.NET Core 6', 'EF Core', 'React.js', 'Azure DevOps', 'CI/CD', 'Unit Testing']
+      technologies: ['.NET Core', 'EF Core', 'React.js', 'Azure DevOps', 'Unit Testing']
     },
     {
       title: 'IDP Project - Intern',
@@ -60,8 +77,8 @@ const Experience = () => {
       location: 'Anand, Gujarat',
       period: 'July 2023 - Dec 2023',
       status: 'Internship',
-      description:
-        'Developed a full-stack industrial project using the MERN stack, including frontend, backend, and deployment.',
+      // description:
+      //   'Developed a full-stack industrial project using the MERN stack, including frontend, backend, and deployment.',
       responsibilities: [
         'Built a full-stack web application using React.js, Node.js, MongoDB, and Express.js',
         'Integrated RESTful APIs for data handling and communication between client and server',
@@ -132,9 +149,9 @@ const Experience = () => {
                     </span>
                   </div>
 
-                  <p className="text-gray-600 leading-relaxed mb-6">
+                  {/* <p className="text-gray-600 leading-relaxed mb-6">
                     {exp.description}
-                  </p>
+                  </p> */}
 
                   <div className="mb-6">
                     <h4 className="font-semibold text-gray-900 mb-3">Key Responsibilities:</h4>

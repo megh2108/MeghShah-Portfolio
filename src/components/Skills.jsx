@@ -77,7 +77,7 @@ const Skills = () => {
                       whileHover={{ scale: 1.05, y: -2 }}
                       className="bg-gray-50 p-3 rounded-lg text-center hover:bg-primary-50 hover:text-primary-700 transition-all duration-300 cursor-pointer"
                     >
-                      <div className="text-lg mb-1">{skill.icon}</div>
+                      <img src={skill.icon} alt={skill.name} className="w-8 h-8 mx-auto mb-1" />
                       <div className="text-sm font-medium text-gray-700">{skill.name}</div>
                     </motion.div>
                   ))}
